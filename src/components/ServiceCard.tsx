@@ -12,7 +12,7 @@ type Props = {
 const ServiceCard: React.FC<Props> = ({ title, description, price, emoji, image, alt }) => {
   return (
     <div className="bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-xl overflow-hidden transition-shadow">
-      {image && <img src={image} alt={alt ?? title} className="w-full h-40 object-cover" />}
+      {image && <img src={image} alt={alt ?? title} className="w-full h-40 object-cover" loading="lazy" />}
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
