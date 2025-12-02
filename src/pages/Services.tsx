@@ -84,7 +84,7 @@ const Services: React.FC = () => {
         </div>
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {visible.map((s, idx) => (
-            <ServiceCard key={idx} title={s.title} description={s.description} price={s.price} image={s.image} alt={s.alt} onOpen={(src)=>setLightbox(src)} />
+            <ServiceCard key={idx} title={s.title} description={s.description} price={s.price} image={s.image} alt={s.alt} onOpen={(src: string) => setLightbox(src)} />
           ))}
         </div>
       </section>
