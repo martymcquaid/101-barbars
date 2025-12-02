@@ -6,8 +6,10 @@ const Navbar: React.FC = () => {
     <header className="bg-white shadow-md sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="h-8 w-8 rounded-full bg-red-600" aria-label="logo" />
-          <span className="text-xl font-extrabold text-red-700 tracking-tight">101 Barbars</span>
+          <Link to="/" aria-label="Home" className="flex items-center gap-2 no-underline">
+            <span className="h-8 w-8 rounded-full bg-red-600" aria-label="logo" />
+            <span className="text-xl font-extrabold text-red-700 tracking-tight">101 Barbars</span>
+          </Link>
         </div>
         <ul className="hidden md:flex gap-6 uppercase text-sm tracking-wider">
           {[
